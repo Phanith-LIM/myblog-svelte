@@ -1,5 +1,6 @@
 import type { PostModel } from '$lib/types.ts';
 import { json } from '@sveltejs/kit';
+export const prerender = true;
 
 async function getPosts(): Promise<PostModel[]> {
     let posts: PostModel[] = [];

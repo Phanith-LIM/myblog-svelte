@@ -9,6 +9,7 @@ const mdsvexOptions = {
 	extensions: ['.md', '.mdx'],
 	rehypePlugins: [
 		rehypeSlug, 
+		
 	],
 };
 
@@ -19,6 +20,9 @@ const config = {
 		alias: {
 			'@/*': './path/to/lib/*',
 		},
+		prerender: {
+			entries: ['/code-highlight-style', '/elements', '/neural-network-design']
+		},		  
 	},
 	extensions: ['.svelte', '.svx', '.md', '.mdx'],
 };

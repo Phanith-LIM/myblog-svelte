@@ -10,6 +10,7 @@
   const NAV_LIST = [
     { name: 'Blog', href: '/blog' },
     { name: 'About', href: '/about-me' },
+    { name: 'RSS', href: '/rss.xml' },
   ];
 
   let isSheetOpen: boolean = false;
@@ -35,6 +36,7 @@
         {#each NAV_LIST as navItem}
           <a
             href={navItem.href}
+            target={navItem.name === 'RSS' ? '_blank' : null}
             class="{cn('text-sm font-medium text-text/80 hover:text-text/100', $page.url.pathname.startsWith(navItem.href) ? 'text-foreground' : 'text-foreground/60')}"
           >
             {navItem.name}
@@ -69,6 +71,7 @@
               {#each NAV_LIST as navItem}
                 <a
                   href={navItem.href}
+                  target={navItem.name === 'RSS' ? '_blank' : null}
                   on:click={() => handleSheetOpenChange(false)}
                   class={
                     cn(
@@ -81,6 +84,7 @@
                 </a>
               {/each}
             </div>
+            <h1>Sheet Content</h1>
           </Sheet.Content>
         </Sheet.Root>
       </div>
