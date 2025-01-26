@@ -7,7 +7,7 @@
     <meta name="description" content={config.description} />
 </svelte:head>
 
-<div class="max-w-screen-md mx-auto px-4 md:px-0">
+<div class="max-w-screen-md mx-auto px-2 md:px-0">
     <div class="col-start-2">
         
     </div>
@@ -88,9 +88,12 @@
     </div>
 
     <!-- Fun GIF Section -->
-    <div class="motion-safe:animate-enter mt-8" style="animation-delay: 900ms">
+    <div class="motion-safe:animate-enter mt-8 w-full lg:w-auto" style="animation-delay: 900ms">
         <h3 class="mt-8 font-semibold">It works on my machine.</h3>
-        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXlkbjVlMDZtMG9lZG0ybXUzZ2p3c2xxam1xYW1vM2U4OWkzdXJlZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ij8AeeqXKFZm0/giphy.gif" 
-             alt="Me debugging at 3AM" class="rounded-lg shadow-lg">
+        <img
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXlkbjVlMDZtMG9lZG0ybXUzZ2p3c2xxam1xYW1vM2U4OWkzdXJlZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ij8AeeqXKFZm0/giphy.gif" 
+            alt="Me debugging at 3AM"
+            class="rounded-lg shadow-lg w-full lg:w-auto"
+        >
     </div>
 </div>

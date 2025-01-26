@@ -75,15 +75,3 @@
       --chart-5: 340 75% 55%;
     }
   }
-
-.prose .h1 {
-  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
-}
-
-.prose .h2 {
-  @apply scroll-m-16 text-2xl font-extrabold tracking-tight lg:text-3xl;
-}
-
-.prose .h3 {
-  @apply scroll-m-12 text-xl font-semibold tracking-tight lg:text-2xl;
-}

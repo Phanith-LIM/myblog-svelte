@@ -2,12 +2,13 @@
     import { onMount } from 'svelte';
     import * as config from '$lib/config';
     import type { PostModel } from '$lib/types.js';
+
+
     export let data: { posts: PostModel[] };
     let postsByYear: [string, PostModel[]][] = [];
+
     onMount(() => {
         const postsMap = new Map<string, PostModel[]>();
-
-        // Group posts by year
         data.posts.forEach((post) => {
             const year = new Date(post.date).getFullYear().toString();
             if (!postsMap.has(year)) {
@@ -24,7 +25,7 @@
     <meta name="description" content={config.description} />
 </svelte:head>
 
-<div class="max-w-screen-md mx-auto px-4 md:px-0">
+<div class="max-w-screen-md mx-auto px-2 md:px-0">
     <div class="col-start-2">
         <h2 class="mb-16 font-geistSans font-semibold">Blog</h2>
         <div class="group">

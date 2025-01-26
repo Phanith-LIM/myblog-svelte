@@ -5,7 +5,6 @@
   const onScroll = () => {
       const currentScrollY = window.scrollY;
       const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      console.log(scrollHeight); // This will log the total scrollable height
       scrollProgress = (currentScrollY / scrollHeight) * 100;
   };
   onMount(() => {

@@ -58,7 +58,7 @@
 </script>
 
 <aside
-  class="sticky top-16 max-w-[192px] self-start hidden motion-safe:animate-enter lg:block"
+  class="fixed hidden max-w-[192px] motion-safe:animate-enter lg:block"
   aria-label="Table of contents"
 >
   <ul class="flex flex-col gap-2 text-sm">

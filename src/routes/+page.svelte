@@ -3,7 +3,6 @@
     import { onMount } from 'svelte';
     import type { PostModel } from '$lib/types.js';
     import * as config from '$lib/config';
-    import dayjs from 'dayjs';
 
     export let data: { posts: PostModel[] };
     let postsByYear: [string, PostModel[]][] = [];

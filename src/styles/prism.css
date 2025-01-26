@@ -1,0 +1,117 @@
+/* General styles for code blocks */
+code[class*=language-], pre[class*=language-] {
+    color: var(--code-color);
+    background: 0 0;
+    font-size: 0.90em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+/* Highlighted text selection for light and dark mode */
+code[class*=language-] ::selection, code[class*=language-]::selection, 
+pre[class*=language-] ::selection, pre[class*=language-]::selection {
+    text-shadow: none;
+    background: #b3d4fc; /* light blue */
+}
+
+.dark code[class*=language-] ::selection, .dark pre[class*=language-] ::selection {
+    background: #374151; /* dark gray for dark mode */
+}
+
+/* Pre block specific styles */
+pre[class*=language-] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    @apply bg-[#f5f2f0] dark:bg-[#1e293b] border border-border dark:border-gray-700;
+}
+
+/* Inline code styles */
+:not(pre) > code[class*=language-] {
+    padding: 0.1em;
+    border-radius: 0.3em;
+    white-space: normal;
+    @apply bg-[#f5f2f0] dark:bg-[#334155] text-gray-900 dark:text-gray-100;
+}
+
+/* Syntax highlighting styles */
+.token.comment, .token.prolog, .token.doctype, .token.cdata {
+    color: #6b7280; /* Gray for comments */
+}
+
+.token.punctuation {
+    color: #9ca3af; /* Slightly lighter gray */
+}
+
+.token.property, .token.tag, .token.boolean, .token.number, .token.constant, 
+.token.symbol, .token.deleted {
+    color: #ef4444; /* Red */
+}
+
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, 
+.token.inserted {
+    color: #22c55e; /* Green */
+}
+
+.token.operator, .token.entity, .language-css .token.string, .style .token.string, 
+.token.url {
+    color: #eab308; /* Yellow */
+}
+
+.token.atrule, .token.attr-value, .token.keyword {
+    color: #3b82f6; /* Blue */
+}
+
+.token.function, .token.class-name {
+    color: #ec4899; /* Pink */
+}
+
+.token.regex, .token.important, .token.variable {
+    color: #e11d48; /* Darker pink */
+}
+
+/* Bold and italic styles */
+.token.bold {
+    font-weight: 700;
+}
+.token.italic {
+    font-style: italic;
+}
+
+/* Copy button styles */
+.copy-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.copy-button:hover {
+    background: #2563eb; /* Darker blue */
+}
+
+.dark .copy-button {
+    background: #1e40af;
+}
+
+.dark .copy-button:hover {
+    background: #1c4eda; /* Slightly brighter blue for dark mode */
+}
