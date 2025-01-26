@@ -84,7 +84,6 @@
                 </a>
               {/each}
             </div>
-            <h1>Sheet Content</h1>
           </Sheet.Content>
         </Sheet.Root>
       </div>
