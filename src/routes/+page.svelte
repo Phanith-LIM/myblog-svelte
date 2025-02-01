@@ -4,7 +4,9 @@
     import type { PostModel } from '$lib/types.js';
     import * as config from '$lib/config';
     export let data: { posts: PostModel[] };
+    import dayjs from 'dayjs';
     let postsByYear: [string, PostModel[]][] = [];
+    
     onMount(() => {
         const postsMap = new Map<string, PostModel[]>();
         data.posts.forEach((post) => {
@@ -21,7 +23,7 @@
 </script>
   
 <svelte:head>
-    <title>{ config.title }</title>
+    <title>{ config.header }</title>
     <meta name="description" content={config.description} />
 </svelte:head>
 
@@ -43,7 +45,7 @@
                           <div class="ml-[20%] flex flex-1 justify-between border-t border-border/40 py-3 group-first-of-type:item:border-t-0">
                               <span>{post.title}</span>
                               <span class="px-2 text-sm text-foreground/40">
-                                  { post.date }
+                                { dayjs(post.date).format('DD-MMM') }
                               </span>
                           </div>
                       </a>

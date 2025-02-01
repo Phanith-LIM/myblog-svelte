@@ -1,4 +1,3 @@
-import { fontFamily } from "tailwindcss/defaultTheme";
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 
@@ -14,6 +13,8 @@ const config: Config = {
 			geistSans: ['var(--font-geist-sans)'],
 			geistMono: ['var(--font-geist-mono)'],
 			pretendard: ['var(--font-pretendard)'],
+			playwrite: ["Playwrite IN", "serif"],
+			KantumruyPro: ["Kantumruy Pro", "serif"]
 		  },
 		  padding: {
 			'safe-left': 'max(1.5rem, env(safe-area-inset-left))',

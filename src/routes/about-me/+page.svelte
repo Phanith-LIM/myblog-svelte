@@ -15,7 +15,7 @@
     <div>
         <h2 class="mb-16 font-geistSans font-semibold">About Me (a.k.a Why I Exist)</h2>
         <div class="motion-safe:animate-enter" style="animation-delay: 100ms">
-            Hey there! I'm Phanith Lim, your friendly neighborhood software engineer. I spend my days wrestling with Flutter 2+ (it’s like regular Flutter, but with more magic). I also have a borderline obsession with Machine Learning and Natural Language Processing—because teaching computers to understand humans is the ultimate challenge, right?
+            Hey there! I'm Phanith Lim, but you can also call me <span class="font-semibold underline underline-offset-4">nil</span> , your friendly neighborhood software engineer. I spend my days wrestling with Flutter 2+ (it’s like regular Flutter, but with more magic). I also have a borderline obsession with Machine Learning and Natural Language Processing—because teaching computers to understand humans is the ultimate challenge, right?
         </div>
         <br>
         <div class="motion-safe:animate-enter" style="animation-delay: 200ms">

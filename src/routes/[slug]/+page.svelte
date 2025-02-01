@@ -1,6 +1,9 @@
 <script lang="ts">
 import { Badge } from "$lib/components/ui/badge/index.js";
 export let data;
+import dayjs from "dayjs";
+
+
 </script>
 
 <svelte:head>
@@ -12,7 +15,7 @@ export let data;
 <article class="px-2 md:px-0">
 	<hgroup class="mb-4 space-y-3 text-center">
 		<h1 class="text-4xl font-bold text-primary">{data.meta.title}</h1>
-		<p class="text-sm text-gray-500">Published on {data.meta.date}</p>
+		<p class="text-sm text-gray-500">Published on { dayjs(data.meta.date).format('dddd, DD-MM-YYYY') }</p>
 		<div class="flex justify-center space-x-2">
 			{#each data.meta.categories as category}
 				<Badge>&num;{category}</Badge>

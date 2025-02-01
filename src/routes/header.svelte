@@ -28,7 +28,7 @@
       <!-- Logo Section -->
       <a href="/" class="mr-4 flex items-center space-x-2">
         <Code class="h-6 w-6" />
-        <span class="inline-block font-bold">{config.title}</span>
+        <span class="inline-block font-bold font-geistMono">{config.header}</span>
       </a>
 
       <!-- Navigation Links for Medium and Larger Screens -->

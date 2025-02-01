@@ -27,7 +27,7 @@ pre[class*=language-] ::selection, pre[class*=language-]::selection {
 }
 
 .dark code[class*=language-] ::selection, .dark pre[class*=language-] ::selection {
-  background: #5b5c5c; /* dark gray for dark mode */
+  background: #5b5c5c;
 }
 
 /* Pre block specific styles */
@@ -96,22 +96,22 @@ pre[class*=language-] {
 /* tooltip settings 👇 */
 
 pre[class*=language-]::-webkit-scrollbar {
-width: 8px; /* Width of the scrollbar */
-height: 8px; /* Height for horizontal scroll */
+  width: 6px; /* Width of the scrollbar */
+  height: 6px; /* Height for horizontal scroll */
 }
 
 pre[class*=language-]::-webkit-scrollbar-track {
-background: #1e293b; /* Match background */
-border-radius: 4px;
+  @apply bg-[#f6f8fa] dark:bg-[#151b23]; /* Track color */
+  border-radius: 4px;
 }
 
 pre[class*=language-]::-webkit-scrollbar-thumb {
-background: #64748b; /* Soft grayish blue */
-border-radius: 4px;
+  @apply  bg-gray-400;
+  border-radius: 4px;
 }
 
 pre[class*=language-]::-webkit-scrollbar-thumb:hover {
-background: #94a3b8; /* Lighter gray on hover */
+  background: #94a3b8; /* Lighter gray on hover */
 }
 
 /* Copy button and tooltip styles */

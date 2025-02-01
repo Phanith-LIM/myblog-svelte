@@ -2,6 +2,7 @@
     import { onMount } from 'svelte';
     import * as config from '$lib/config';
     import type { PostModel } from '$lib/types.js';
+    import dayjs from 'dayjs';
 
 
     export let data: { posts: PostModel[] };
@@ -43,7 +44,7 @@
                             <div class="ml-[20%] flex flex-1 justify-between border-t border-border/40 py-3 group-first-of-type:item:border-t-0">
                                 <span>{post.title}</span>
                                 <span class="px-2 text-sm text-foreground/40">
-                                    {post.date}
+                                    { dayjs(post.date).format('DD-MMM') }
                                 </span>
                             </div>
                         </a>
