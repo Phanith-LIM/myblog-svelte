@@ -57,22 +57,21 @@
   });
 </script>
 
-<aside
-  class="fixed hidden max-w-[192px] motion-safe:animate-enter lg:block"
-  aria-label="Table of contents"
->
-  <ul class="flex flex-col gap-2 text-sm">
-    {#each $toc as { id, text, level }}
-      <li key={id} class={`pl-${(level - 1) * 4}`}>
-        <a
-          href={`#${id}`}
-          class={`block py-0.5 transition-colors duration-200 ease-in-out hover:text-foreground/80 ${
-            $activeId === id ? 'font-medium text-foreground/80' : 'text-foreground/40'
-          }`}
-        >
-          {text}
-        </a>
-      </li>
-    {/each}
-  </ul>
-</aside>
+{#if $toc.length > 0}
+  <aside class="fixed hidden max-w-[192px] motion-safe:animate-enter lg:block" aria-label="Table of contents">
+    <ul class="flex flex-col gap-2 text-sm">
+      {#each $toc as { id, text, level }}
+        <li class={`pl-${(level - 1) * 4}`}>
+          <a
+            href={`#${id}`}
+            class={`block py-0.5 transition-colors duration-200 ease-in-out hover:text-foreground/80 ${
+              $activeId === id ? 'font-medium text-foreground/80' : 'text-foreground/40'
+            }`}
+          >
+            {text}
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </aside>
+{/if}

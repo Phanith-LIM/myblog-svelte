@@ -40,4 +40,3 @@ I simply answered with the same words my math teacher once told me. I also advis
 ### 4. Final Thoughts  
 
 I hope this advice helps you stop comparing yourself to others and start focusing on becoming a better version of yourself every day.
-
