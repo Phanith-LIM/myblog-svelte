@@ -33,7 +33,12 @@ const config = {
 			'@/*': './path/to/lib/*',
 		},
 		prerender: {
-			entries: ['/src/posts']
+			entries: [
+				'/c-translate',
+				'/reflex-your-self',
+				'/neural-network-design',
+				'/linear-regression',
+			]
 		},		  
 	},
 	extensions: ['.svelte', '.svx', '.md', '.mdx'],
