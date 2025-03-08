@@ -17,7 +17,7 @@ But during my freshman year, I struggled with comparing myself to others. I wond
 
 In my first semester, I attended a Personal Development class that helped improve students' mindsets. I learned how to set goals, manage time, solve problems, communicate effectively, be a good leader, team member, and student. One thing my teacher said really stuck with me:  
 
-> *"Everyone is unique. Don’t compare yourself to others—compare yourself to who you were yesterday."*  
+> *Everyone is unique. Don’t compare yourself to others—compare yourself to who you were yesterday.*  
 
 That changed my perspective. I started observing my classmates and realized how true those words were—each person has their own unique talents and strengths.  
 
@@ -25,7 +25,7 @@ That changed my perspective. I started observing my classmates and realized how 
 
 One of the most motivating things I heard was from my math teacher. He said:  
 
-> *"They are not smarter than you; they just spend more time on it than you do. The more time you spend, the more you gain."*  
+> *They are not smarter than you; they just spend more time on it than you do. The more time you spend, the more you gain.*  
 
 That statement helped me stop comparing myself to others because I realized that I could improve if I simply dedicated more time to learning.  
 
@@ -33,9 +33,9 @@ That statement helped me stop comparing myself to others because I realized that
 
 During Engineering Day, an event where students showcase their projects, a junior student approached me and asked,  
 
-*"Bong, how do you get good at coding? Can you give me some tips? How many hours should I spend learning to code?"*  
+*Bong, how do you get good at coding? Can you give me some tips? How many hours should I spend learning to code?*  
 
-I simply answered with the same words my math teacher once told me. I also advised him, *"If you want to be good at coding, commit to continuous learning—never stop improving."*  
+I simply answered with the same words my math teacher once told me. I also advised him, *If you want to be good at coding, commit to continuous learning—never stop improving.*  
 
 ### 4. Final Thoughts  
 

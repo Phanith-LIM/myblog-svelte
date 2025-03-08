@@ -29,10 +29,11 @@ Noted that CTranslate2 supports selected models from Hugging Face’s Transforme
 ### Step 2: Load the Whisper Model
 Use the following command to convert your Whisper model to CTranslate2:
 ```bash
-ct2-transformers-converter --model <model_id> --output_dir <output_path> --copy_files tokenizer_config.json --quantization int8
+ct2-transformers-converter --model <model_id> --output_dir <output_path> --copy_files tokenizer_config.json --quantization <types>
 ```
+For flag `--quantization int8` is a technique that can reduce the model size and accelerate. [`read more`](https://opennmt.net/CTranslate2/quantization.html)
+
 I have my own fine-tuned model [`PhanithLIM/whisper-tiny-aug-29dec`](https://huggingface.co/PhanithLIM/whisper-tiny-aug-29dec) and I want to convert it to C.
-for flag `--quantization int8` is a technique that can reduce the model size and accelerate. [`read more`](https://opennmt.net/CTranslate2/quantization.html)
 ```bash
 ct2-transformers-converter --model PhanithLIM/whisper-tiny-aug-29dec --output_dir whisper-tiny-int8 --copy_files tokenizer_config.json --quantization int8
 ```
