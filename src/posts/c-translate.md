@@ -52,7 +52,7 @@ model_size = "/content/whisper-tiny-int8"
 model = WhisperModel(model_size, device="cpu", compute_type="int8", local_files_only=True)
 ```
 **Note:** 
-- Ensure `local_files_only=True` to load the model from the local directory. But In case store your converted model in Hugging Face, you can set `local_files_only=False`.
+- Ensure `local_files_only=True` to load the model from the local directory. But In case you store your converted model in Hugging Face, you can set `local_files_only=False`.
 - If you want to run it on GPU, change `device="cuda"`. This will significantly improve performance.
 
 ```python
