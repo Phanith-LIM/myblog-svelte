@@ -47,6 +47,10 @@
 	"dependencies": {
 		"clipboard": "^2.0.11",
 		"dayjs": "^1.11.13",
-		"rehype-slug": "^6.0.0"
+		"katex": "^0.16.21",
+		"mathlifier": "^2.0.3",
+		"rehype-katex-svelte": "^1.2.0",
+		"rehype-slug": "^6.0.0",
+		"remark-math": "3.0.0"
 	}
 }
