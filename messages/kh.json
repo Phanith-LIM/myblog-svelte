@@ -1,0 +1,8 @@
+{
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+    "hello_world": "លីម​ ផានិត",
+	"greetings": "Greetings {name}.",
+    "header_name": "ផានិត",
+    "blog": "ប្លុក",
+    "about": "អំពីខ្ញុំ"
+}

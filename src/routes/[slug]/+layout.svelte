@@ -2,7 +2,6 @@
 	import '../../styles/prism.css';
 	import '../../app.css';
 	import Progress from './progress.svelte';
-	import TableContent from './toc.svelte';
 	let { children } = $props();
 	import CodeBlock from './code-block.svelte';
 

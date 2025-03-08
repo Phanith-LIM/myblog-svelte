@@ -1,0 +1,8 @@
+{
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+    "hello_world": "Phanith LIM",
+	"greetings": "Greetings {name}.",
+    "header_name": "Phanith",
+    "blog": "Blog",
+    "about": "About"
+}

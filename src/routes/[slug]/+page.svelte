@@ -1,7 +1,13 @@
 <script lang="ts">
 import { Badge } from "$lib/components/ui/badge/index.js";
-export let data;
 import dayjs from "dayjs";
+import { languageTag } from "$lib/paraglide/runtime.js";
+export let data;
+
+$: lang = languageTag()
+$: if (lang) {
+	
+}
 
 </script>
 
@@ -10,6 +16,7 @@ import dayjs from "dayjs";
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
+
 
 <article class="px-2 md:px-0">
 	<hgroup class="text-center">

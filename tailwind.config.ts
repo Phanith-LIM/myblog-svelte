@@ -14,7 +14,9 @@ const config: Config = {
 			geistMono: ['var(--font-geist-mono)'],
 			pretendard: ['var(--font-pretendard)'],
 			playwrite: ["Playwrite IN", "serif"],
-			KantumruyPro: ["Kantumruy Pro", "serif"]
+			KantumruyPro: ["Kantumruy Pro", "serif"],
+			Santepheap: ["Koh Santepheap", "serif"],
+			Battambang: ["Battambang", "system-ui"],
 		  },
 		  padding: {
 			'safe-left': 'max(1.5rem, env(safe-area-inset-left))',
