@@ -1,7 +1,7 @@
 ---
 title: Audio Augmentation Techniques for Deep Learning
 description: A comprehensive guide to audio data augmentation techniques for deep learning models.
-date: '2025-03-1'
+date: '2025-02-20'
 categories:
   - machine-learning
   - deep-learning
