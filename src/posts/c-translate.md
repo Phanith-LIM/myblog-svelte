@@ -63,7 +63,7 @@ for segment in segments:
     print("[%.2fs -> %.2fs] %s" % (segment.start, segment.end, segment.text))
 ```
 
-This output was tested on an audio file of 3 minutes and 2 seconds, and it took 1 minute to transcribe. However, when tested on a GPU, it took only 5 seconds to transcribe—blazing fast! The output shows that the model does not transcribe the Khmer language well because it lacks sufficient training data, and it is a tiny model.
+This output was tested on an audio file of 3 minutes and 2 seconds, and it took 1 minute to transcribe. However, when tested on a GPU, it took only 5 seconds to transcribe—blazing fast! The output shows that the model does not work very well for transcribing the Khmer language because it was trained on a small amount of data, and it is a tiny model.
 
 ```
 Detected language 'km' with probability 0.998886
