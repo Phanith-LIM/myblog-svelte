@@ -38,6 +38,7 @@ const config = {
 				'/reflex-your-self',
 				'/neural-network-design',
 				'/linear-regression',
+				'/7-segment'
 			]
 		},		  
 	},

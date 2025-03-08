@@ -1,7 +1,8 @@
 <script lang="ts">
 import { Badge } from "$lib/components/ui/badge/index.js";
-export let data;
 import dayjs from "dayjs";
+
+export let data;
 
 </script>
 

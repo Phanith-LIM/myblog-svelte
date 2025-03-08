@@ -2,6 +2,7 @@
 	import { Button } from '$lib/components/ui/button/index';
 	import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '$lib/components/ui/dropdown-menu/index';
 	import { Dot, Monitor, Moon, Sun } from 'lucide-svelte';
+	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 
 	// Theme options
@@ -11,16 +12,37 @@
 		{ name: 'System', value: 'system', icon: Monitor },
 	];
 
-	export const theme = writable('system');
+	// Use writable store for theme
+	const theme = writable('light');
+
+	onMount(() => {
+		const cookieTheme = document.cookie.split('; ').find((row) => row.startsWith('theme='));
+		if (cookieTheme) {
+			theme.set(cookieTheme.split('=')[1]);
+		}
+
+		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+			theme.update((currentTheme) => {
+				if (currentTheme === 'system') {
+					const newSystemTheme = e.matches ? 'dark' : 'light';
+					document.documentElement.classList.remove('light', 'dark');
+					document.documentElement.classList.add(newSystemTheme);
+				}
+				return currentTheme;
+			});
+		});
+	});
+	
 	function setTheme(newTheme: string) {
 		theme.set(newTheme);
 		if (typeof window !== 'undefined') {
 			document.documentElement.classList.remove('light', 'dark');
 			if (newTheme === 'system') {
-				const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-				document.documentElement.classList.add(systemTheme);
+				document.cookie = `theme=system;max-age=31536000;path=/`;
+				document.documentElement.classList.add(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 			} else {
 				document.documentElement.classList.add(newTheme);
+				document.cookie = `theme=${newTheme};max-age=31536000;path=/`;
 			}
 		}
 	}

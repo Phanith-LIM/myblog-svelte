@@ -10,6 +10,17 @@
 			integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
 			crossorigin="anonymous"
 		/>
+		<script type="module">
+			const theme = document.cookie.split('; ').find((row) => row.startsWith('theme='));
+			if (theme) {
+				if(theme.split('=')[1] === 'system') {
+					const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+					document.documentElement.classList.add(dark ? 'dark' : 'light');
+				} else {
+					document.documentElement.classList.add(theme.split('=')[1]);
+				}
+			}
+		</script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
