@@ -38,7 +38,10 @@ const config = {
 				'/reflex-your-self',
 				'/neural-network-design',
 				'/linear-regression',
-				'/7-segment'
+				'/7-segment',
+				'/audio-augmentation',
+				'/pydantic-llm',
+				'/run-llm'
 			]
 		},		  
 	},
