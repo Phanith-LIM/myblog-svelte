@@ -1,9 +1,11 @@
 <script lang="ts">
-import { Badge } from "$lib/components/ui/badge/index.js";
-import dayjs from "dayjs";
+	import { Badge } from "$lib/components/ui/badge";
+	import Giscus from "@giscus/svelte";
+	import dayjs from "dayjs";
 
-export let data;
+	export let data;
 
+	let giscusTheme = "light"; // change based on your theme logic if needed
 </script>
 
 <svelte:head>
@@ -17,18 +19,38 @@ export let data;
 	{/if}
 </svelte:head>
 
-<article class="px-2 md:px-0">
-	<hgroup class="text-center">
-		<h1 class="text-3xl font-bold text-primary">{data.meta.title}</h1>
-		<p class="text-sm text-gray-500">Published on { dayjs(data.meta.date).format('dddd, DD-MM-YYYY') }</p>
-		<div class="flex justify-center space-x-2">
-			{#each data.meta.categories as category}
-				<Badge>&num;{category}</Badge>
-			{/each}
-		</div>
-	</hgroup>
-	<hr>
-	<div class="pb-10 max-w-screen-lg mx-auto">
+<article class="px-4 md:px-0 max-w-3xl mx-auto">
+	<h1 class="text-3xl font-bold text-primary mb-2">{data.meta.title}</h1>
+	<p class="text-sm text-gray-500 mb-4">
+		Published on {dayjs(data.meta.date).format("dddd, DD-MM-YYYY")}
+	</p>
+
+	<div class="flex flex-wrap gap-2 mb-4">
+		{#each data.meta.categories as category}
+			<Badge># {category}</Badge>
+		{/each}
+	</div>
+
+	<hr class="my-6" />
+
+	<div class="prose dark:prose-invert max-w-none pb-10">
 		<svelte:component this={data.content} />
 	</div>
+
+	<hr class="my-10" />
+
+	<Giscus
+		id="comments"
+		repo="Phanith-LIM/myblog-svelte"
+		repoId="R_kgDONvurpQ"
+		category="Announcements"
+		categoryId="DIC_kwDOF1L2fM4B-hVS"
+		mapping="pathname"
+		reactionsEnabled="1"
+		emitMetadata="0"
+		inputPosition="top"
+		theme='dark'
+		lang="en"
+		loading="lazy"
+	/>
 </article>
