@@ -6,6 +6,7 @@ categories:
   - machine-learning
   - deep-learning
   - pytorch
+thumbnail: null
 published: false
 ---
 ### 1. Rules for Ordering Layers

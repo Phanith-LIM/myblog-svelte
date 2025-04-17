@@ -8,6 +8,7 @@ categories:
   - langchain
   - ollama
   - data-processing
+thumbnail: null
 published: true
 ---
 

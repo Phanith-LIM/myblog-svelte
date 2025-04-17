@@ -6,6 +6,7 @@ categories:
   - personal-development
   - self-improvement
   - motivation
+thumbnail: null
 published: true
 ---
 Back in my freshman year, I was excited about coding—solving algorithms, learning new programming languages, and exploring how computers worked. But I didn't have a clear goal. I was simply following my passion, something I'd been curious about since childhood.  

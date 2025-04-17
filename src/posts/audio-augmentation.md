@@ -7,6 +7,7 @@ categories:
   - deep-learning
   - pytorch
   - numpy
+thumbnail: ../../images/audio-augmentation/thumbnail.png
 published: true
 ---
 

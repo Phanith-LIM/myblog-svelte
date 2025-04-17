@@ -7,6 +7,7 @@ categories:
   - machine-learning
   - optimization
   - C-language
+thumbnail: null
 published: true
 ---
 Whisper is a powerful speech recognition model developed by OpenAI, designed to transcribe human speech into text with high accuracy. However, its implementation in Python can be slow and memory-intensive, especially when processing large amounts of audio data.

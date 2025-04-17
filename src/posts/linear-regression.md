@@ -7,6 +7,7 @@ categories:
   - machine-learning
   - numpy
   - gradient-descent
+thumbnail: null
 published: false
 ---
 

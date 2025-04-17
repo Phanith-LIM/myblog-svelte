@@ -10,6 +10,11 @@ export let data;
 	<title>{data.meta.title} - My Blog</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.description} />
+	<meta property="article:published_time" content={data.meta.date} />
+	{#if data.meta.thumbnail}
+		<meta property="og:image" content={data.meta.thumbnail} />
+	{/if}
 </svelte:head>
 
 <article class="px-2 md:px-0">

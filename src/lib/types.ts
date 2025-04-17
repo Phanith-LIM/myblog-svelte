@@ -8,6 +8,7 @@ export interface PostModel {
     categories: Categories[];
     description: string;
     published: boolean;
+    thumbnail?: string;
 }
 
 export interface PostYear {
