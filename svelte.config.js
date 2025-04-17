@@ -42,7 +42,8 @@ const config = {
 				'/audio-augmentation',
 				'/pydantic-llm',
 				'/run-llm'
-			]
+			],
+			handleHttpError: 'warn',
 		},		  
 	},
 	extensions: ['.svelte', '.svx', '.md', '.mdx'],
