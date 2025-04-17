@@ -7,6 +7,7 @@ categories:
   - simulation
   - proteus
   - karnaugh-map
+thumbnail: null
 published: true
 ---
 This project demonstrates a 7-segment display using Proteus simulation, applying logic circuits for functionality.

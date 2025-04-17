@@ -5,7 +5,6 @@
     import * as config from '$lib/config';
     import dayjs from 'dayjs';
 
-
     export let data: { posts: PostModel[] };
     let postsByYear: [string, PostModel[]][] = [];
     
@@ -26,6 +25,7 @@
 <svelte:head>
     <title>{ config.header }</title>
     <meta name="description" content={config.description} />
+    <meta property="og:image" content="../../logo.svg" />
 </svelte:head>
 
 <div class="max-w-screen-md mx-auto px-4 md:px-0">
