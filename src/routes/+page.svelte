@@ -24,8 +24,7 @@
   
 <svelte:head>
     <title>{ config.header }</title>
-    <meta name="description" content={config.description} />
-    <meta property="og:image" content="../../images/audio-augmentation/thumbnail.png" />
+    <meta property="og:image" content="image.jpg" />
 </svelte:head>
 
 <div class="max-w-screen-md mx-auto px-4 md:px-0">
