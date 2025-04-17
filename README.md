@@ -1,11 +1,6 @@
-# MYBLOG-SVELTEKIT
+# PERSONAL WEBSITE USING SVELTEKIT
 
-This is my personal blog website, built with [SvelteKit](https://kit.svelte.dev/), [Tailwind CSS](https://tailwindcss.com/), and [shadcn-svelte](https://github.com/huntabyte/shadcn-svelte). It is inspired by the UI design of [`next-shadcn-blog`](https://github.com/2wndrhs/next-shadcn-blog), but built entirely with SvelteKit.
-
----
-
-## Preview
-
+<img src="https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=Svelte&logoColor=white" /> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /> <img src="https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white" />
 
 ## 📌 Features
 
