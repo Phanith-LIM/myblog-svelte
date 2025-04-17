@@ -47,10 +47,11 @@
 		categoryId="DIC_kwDOF1L2fM4B-hVS"
 		mapping="pathname"
 		reactionsEnabled="1"
-		emitMetadata="0"
-		inputPosition="top"
+		emitMetadata="1"
+		inputPosition="bottom"
 		theme='dark'
 		lang="en"
+		strict="0"
 		loading="lazy"
 	/>
 </article>
