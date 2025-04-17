@@ -4,15 +4,34 @@
 	import Progress from '../../lib/components/progress.svelte';
 	import TableContent from '../../lib/components/toc.svelte';
 	import CodeBlock from '../../lib/components/code-block.svelte';
+	import Giscus from '@giscus/svelte';
+	import { themeStore } from '$lib/themes';
 
 	let { children } = $props();
+	
+
 </script>
+
 <Progress />
 <div class="grid grid-cols-1 lg:grid-cols-[192px_3fr] gap-4">
 	<TableContent />
 	<CodeBlock>
 		<div class="prose prose-slate max-w-screen-md w-full dark:prose-invert motion-safe:animate-enter md:col-start-2 max-auto">
 			{@render children()}
+			<Giscus
+				id="comments"
+				repo="Phanith-LIM/myblog-svelte"
+				repoId="R_kgDONvurpQ"
+				categoryId="DIC_kwDONvurpc4CpMuR"
+				mapping="pathname"
+				reactionsEnabled="1"
+				emitMetadata="0"
+				strict="0"
+				inputPosition="top"
+				theme={$themeStore === 'system' ? 'preferred_color_scheme' : $themeStore}
+				lang="en"
+				loading="lazy"
+			/>
 		</div>
 	</CodeBlock>
 </div>

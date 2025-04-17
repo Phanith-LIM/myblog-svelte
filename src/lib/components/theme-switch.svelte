@@ -3,7 +3,7 @@
 	import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '$lib/components/ui/dropdown-menu/index';
 	import { Dot, Monitor, Moon, Sun } from 'lucide-svelte';
 	import { onMount } from 'svelte';
-	import { writable } from 'svelte/store';
+	import { themeStore } from '$lib/themes';
 
 	// Theme options
 	const THEME_ITEM = [
@@ -12,17 +12,19 @@
 		{ name: 'System', value: 'system', icon: Monitor },
 	];
 
-	// Use writable store for theme
-	const theme = writable('light');
+	// // Use writable store for theme
+	// const theme = writable('light');
+
 
 	onMount(() => {
 		const cookieTheme = document.cookie.split('; ').find((row) => row.startsWith('theme='));
 		if (cookieTheme) {
-			theme.set(cookieTheme.split('=')[1]);
+			themeStore.set(cookieTheme.split('=')[1]);
+
 		}
 
 		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-			theme.update((currentTheme) => {
+			themeStore.update((currentTheme) => {
 				if (currentTheme === 'system') {
 					const newSystemTheme = e.matches ? 'dark' : 'light';
 					document.documentElement.classList.remove('light', 'dark');
@@ -34,7 +36,7 @@
 	});
 	
 	function setTheme(newTheme: string) {
-		theme.set(newTheme);
+		themeStore.set(newTheme);
 		if (typeof window !== 'undefined') {
 			document.documentElement.classList.remove('light', 'dark');
 			if (newTheme === 'system') {
@@ -60,7 +62,7 @@
 			<DropdownMenuItem class="flex cursor-pointer items-center gap-2" onSelect={() => setTheme(item.value)}>
 				<item.icon class="h-4 w-4" />
 				<span>{item.name}</span>
-				{#if $theme === item.value}
+				{#if $themeStore === item.value}
 					<Dot />
 				{/if}
 			</DropdownMenuItem>
