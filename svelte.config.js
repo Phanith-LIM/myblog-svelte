@@ -2,6 +2,7 @@ import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import rehypeSlug from 'rehype-slug'; 
+import readingTime from "mdsvex-reading-time";
 
 import remarkMath from 'remark-math';
 import rehypeKatexSvelte from "rehype-katex-svelte";
@@ -12,6 +13,7 @@ const mdsvexOptions = {
 	extensions: ['.md', '.mdx'],
 	remarkPlugins: [
 		remarkMath,
+		readingTime,
 	],
 	rehypePlugins: [
 		rehypeSlug, 

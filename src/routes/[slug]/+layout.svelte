@@ -4,7 +4,8 @@
 	import Progress from '../../lib/components/progress.svelte';
 	import TableContent from '../../lib/components/toc.svelte';
 	import CodeBlock from '../../lib/components/code-block.svelte';
-	// import Giscus from '@giscus/svelte';
+	import Giscus from '@giscus/svelte';
+	import { Separator } from '$lib/components/ui/separator/index.js';
 	import { themeStore } from '$lib/themes';
 
 	let { children } = $props();
@@ -18,7 +19,10 @@
 	<CodeBlock>
 		<div class="prose prose-slate max-w-screen-md w-full dark:prose-invert motion-safe:animate-enter md:col-start-2 max-auto">
 			{@render children()}
-			<!-- <Giscus
+			<br>
+			<Separator />
+			<br>
+			<Giscus
 				id="comments"
 				repo="Phanith-LIM/myblog-svelte"
 				repoId="R_kgDONvurpQ"
@@ -31,7 +35,7 @@
 				theme={$themeStore === 'system' ? 'preferred_color_scheme' : $themeStore}
 				lang="en"
 				loading="lazy"
-			/> -->
+			/>
 		</div>
 	</CodeBlock>
 </div>

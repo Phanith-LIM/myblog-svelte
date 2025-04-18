@@ -1,5 +1,7 @@
 <script lang="ts">
 import { Badge } from "$lib/components/ui/badge/index.js";
+import { Separator } from "$lib/components/ui/separator/index.js";
+import { Calendar } from "lucide-svelte";
 import dayjs from "dayjs";
 
 export let data;
@@ -17,18 +19,25 @@ export let data;
 	{/if}
 </svelte:head>
 
+<p class="text-3xl font-semibold text-center">
+	{data.meta.title}
+	<br>
+	<span class="text-sm text-gray-500 font-normal space-x-2">
+		<span>{ dayjs(data.meta.date).format('DD MMMM YYYY') } </span>
+		<span> | </span>
+		<span>{ data.meta.readingTime?.text } </span>
+	</span>
+	
+	<!-- <span class="flex justify-center space-x-2 pt-2">
+		{#each data.meta.categories as category}
+			<Badge variant="secondary">&num;{category}</Badge>
+		{/each}
+	</span> -->
+</p>
+
+<Separator />
 <article class="px-2 md:px-0">
-	<hgroup class="text-center">
-		<h1 class="text-3xl font-bold text-primary">{data.meta.title}</h1>
-		<p class="text-sm text-gray-500">Published on { dayjs(data.meta.date).format('dddd, DD-MM-YYYY') }</p>
-		<div class="flex justify-center space-x-2">
-			{#each data.meta.categories as category}
-				<Badge>&num;{category}</Badge>
-			{/each}
-		</div>
-	</hgroup>
-	<hr>
-	<div class="pb-10 max-w-screen-lg mx-auto">
+	<div class="max-w-screen-lg mx-auto">
 		<svelte:component this={data.content} />
 	</div>
 </article>
