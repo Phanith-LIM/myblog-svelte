@@ -49,8 +49,8 @@
     <div class="flex items-center gap-3">
       <ThemeSwitch />
       <Button variant="ghost" size="icon" class="h-8 w-8">
-        <a href="https://github.com/Phanith-LIM" target="_blank">
-          <Github class="size-[1.2rem]" />
+        <a href="/rss.xml" target="_blank">
+          <Rss class="size-[1.2rem]" />
         </a>
       </Button>
       <Button variant="ghost" size="icon" class="h-8 w-8">
@@ -58,10 +58,9 @@
           <img src="/hg.svg" alt="Hugging Face" class="h-5 w-5" />
         </a>
       </Button>
-
       <Button variant="ghost" size="icon" class="h-8 w-8">
-        <a href="/rss.xml" target="_blank">
-          <Rss class="size-[1.2rem]" />
+        <a href="https://github.com/Phanith-LIM" target="_blank">
+          <Github class="size-[1.2rem]" />
         </a>
       </Button>
       
