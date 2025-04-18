@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Button } from '$lib/components/ui/button/index';
-  import { Code, Github, AlignJustify, Linkedin } from 'lucide-svelte';
+  import { Code, Github, AlignJustify, Linkedin, Rss } from 'lucide-svelte';
   import ThemeSwitch from './theme-switch.svelte';
   import * as config from '$lib/config';
   import { page } from '$app/stores';
@@ -10,7 +10,7 @@
   const NAV_LIST = [
     { name: 'Blog', href: '/blog' },
     { name: 'About', href: '/about-me' },
-    { name: 'RSS', href: '/rss.xml' },
+    // { name: 'RSS', href: '/rss.xml' },
   ];
 
   let isSheetOpen: boolean = false;
@@ -58,6 +58,13 @@
           <img src="/hg.svg" alt="Hugging Face" class="h-5 w-5" />
         </a>
       </Button>
+
+      <Button variant="ghost" size="icon" class="h-8 w-8">
+        <a href="/rss.xml" target="_blank">
+          <Rss class="size-[1.2rem]" />
+        </a>
+      </Button>
+      
       <!-- Mobile Navigation Menu -->
       <div class="md:hidden">
         <Sheet.Root onOpenChange={handleSheetOpenChange} open={isSheetOpen} >
