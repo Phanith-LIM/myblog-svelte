@@ -13,7 +13,6 @@
 - **Prism.js**: ការបន្លិចវាក្យសម្ព័ន្ធសម្រាប់ប្លុកកូដ។
 - **Clipboard.js**: ចម្លងកូដដោយចុចតែម្តង។
 - **Katex**: ការបង្ហាញសមីការដោយប្រើ LaTeX។
-- **រចនាដើម** [next-shadcn-blog](https://github.com/2wndrhs/next-shadcn-blog)
 
 ## ចាប់ផ្តើម
 
@@ -21,7 +20,7 @@
 
 - [Node.js](https://nodejs.org/) (ណែនាំ v16+)
 - [Git](https://git-scm.com/)
-- [pnpm](https://pnpm.io/) (ស្រេចចិត្ត ណែនាំ)
+- [pnpm](https://pnpm.io/) (ស្រេចចិត្ត, ណែនាំ)
 
 ### ការដំឡើង
 
@@ -59,7 +58,7 @@ pnpm run preview  # មើលជាមុននៅលើម៉ាស៊ីនម
 | Netlify        | `@sveltejs/adapter-netlify`    |
 | Vercel         | `@sveltejs/adapter-vercel`     |
 | Cloudflare     | `@sveltejs/adapter-cloudflare` |
-| ការបង្ហោះឋិតិវន្ត | `@sveltejs/adapter-static`     |
+| Static Hosting | `@sveltejs/adapter-static`     |
 
 ដំឡើងអាដាប់ទ័រ និងធ្វើបច្ចុប្បន្នភាព `svelte.config.js`៖
 
