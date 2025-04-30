@@ -110,7 +110,7 @@ pre[class*=language-]::-webkit-scrollbar {
 }
 
 pre[class*=language-]::-webkit-scrollbar-track {
-  @apply bg-[#f6f8fa] dark:bg-[#151b23]; /* Track color */
+  @apply bg-[#f6f8fa] dark:bg-[#1d1523]; /* Track color */
   border-radius: 4px;
 }
 

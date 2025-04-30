@@ -6,13 +6,15 @@ import readingTime from "mdsvex-reading-time";
 import remarkMath from 'remark-math';
 import rehypeKatexSvelte from "rehype-katex-svelte";
 import { createHighlighter } from 'shiki';
+import rehypePrettyCode from "rehype-pretty-code";
+import { transformerCopyButton } from '@rehype-pretty/transformers';
+
 
 /** @type {import('@sveltejs/kit').Config} */
 
-const theme = "github-dark"
 const highlighter = await createHighlighter({
 	themes: [
-		theme
+		"one-light", 'one-dark-pro'
 	],
 	langs: ['javascript', 'typescript', 'python', 'bash'],
 });
@@ -27,6 +29,7 @@ const mdsvexOptions = {
 	rehypePlugins: [
 		rehypeSlug, 
 		rehypeKatexSvelte,
+		rehypePrettyCode, 
 		{
 			macros: {
 			  "\\CC": "\\mathbb{C}",
@@ -34,12 +37,24 @@ const mdsvexOptions = {
 			},
 		},
 	],
-	// highlight: {
-	// 	highlighter: async (code, lang = 'text') => {
-	// 		const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
-	// 		return `{@html \`${html}\` }`;
-	// 	}
-	// },
+	highlight: {
+		highlighter: async (code, lang = 'text') => {
+			const html = escapeSvelte(highlighter.codeToHtml(code, { 
+				lang: lang, 
+				themes: {
+					light: 'one-light',
+					dark: 'one-dark-pro',
+				},
+				transformers: [
+					transformerCopyButton({
+						visibility: 'hover',
+						feedbackDuration: 2_000,
+					}),
+				]
+			}));
+			return `{@html \`${html}\` }`;
+		}
+	},
 };
 
 const config = {
