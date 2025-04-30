@@ -17,7 +17,7 @@ export let data;
 	{/if}
 </svelte:head>
 
-<p class="text-3xl font-semibold text-center">
+<p class="text-3xl font-semibold text-center text-primary">
 	{data.meta.title}
 	<br>
 	<span class="text-sm text-gray-500 font-normal space-x-2">

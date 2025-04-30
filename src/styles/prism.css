@@ -1,3 +1,4 @@
+@import "tailwindcss";
 @reference 'tailwindcss';
 
 /* General styles for code blocks */
@@ -25,7 +26,7 @@ code[class*=language-], pre[class*=language-] {
 code[class*=language-] ::selection, code[class*=language-]::selection, 
 pre[class*=language-] ::selection, pre[class*=language-]::selection {
   text-shadow: none;
-  background: #b3d4fc; /* light blue */
+  background: #f6f8fa;
 }
 
 .dark code[class*=language-] ::selection, .dark pre[class*=language-] ::selection {
@@ -37,8 +38,14 @@ pre[class*=language-] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
-  @apply bg-[#f6f8fa] dark:bg-[#151b23];
+  background-color: #f6f8fa; /* Light mode background */
+  color: var(--code-color);
   font-family: 'JetBrains Mono', monospace; /* Ensure font is applied to pre elements */
+}
+
+.dark pre[class*=language-] {
+  background-color: #151b23; /* Dark mode background */
+  color: var(--code-color-dark, #ffffff); /* Optional: Adjust text color for dark mode */
 }
 
 /* Inline code styles */
@@ -108,7 +115,7 @@ pre[class*=language-]::-webkit-scrollbar-track {
 }
 
 pre[class*=language-]::-webkit-scrollbar-thumb {
-  @apply bg-gray-300;
+  @apply  bg-gray-400;
   border-radius: 4px;
 }
 
