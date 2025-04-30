@@ -6,7 +6,7 @@ const config: Config = {
 	content: [
 		"./src/**/*.{html,js,svelte,ts}",
 	],
-	safelist: ['pl-4', 'pl-8'],
+	// safelist: ['pl-4', 'pl-8'],
 	theme: {
 		extend: {
 		  fontFamily: {

@@ -16,7 +16,7 @@
 <Progress />
 <div class="flex justify-center">
 	<CodeBlock>
-		<div class="prose prose-slate max-w-screen-md w-full dark:prose-invert motion-safe:animate-enter md:col-start-2 mx-auto">
+		<div class="prose prose-slate max-w-(--breakpoint-md) w-full dark:prose-invert motion-safe:animate-enter md:col-start-2 mx-auto">
 			{@render children()}
 			<br>
 			<Separator />
@@ -41,7 +41,7 @@
 <!-- <div class="grid grid-cols-1 lg:grid-cols-[192px_3fr] gap-4">
 	<TableContent />
 	<CodeBlock>
-		<div class="prose prose-slate max-w-screen-md w-full dark:prose-invert motion-safe:animate-enter md:col-start-2 max-auto">
+		<div class="prose prose-slate max-w-(--breakpoint-md) w-full dark:prose-invert motion-safe:animate-enter md:col-start-2 max-auto">
 			{@render children()}
 			<br>
 			<Separator />

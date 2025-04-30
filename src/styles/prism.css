@@ -1,3 +1,5 @@
+@reference 'tailwindcss';
+
 /* General styles for code blocks */
 code[class*=language-], pre[class*=language-] {
   color: var(--code-color);

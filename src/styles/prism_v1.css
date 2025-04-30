@@ -44,7 +44,7 @@ pre[class*=language-] {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
-  @apply bg-[#f5f2f0] dark:bg-[#334155] text-gray-900 dark:text-gray-100;
+  @apply bg-[#f5f2f0] dark:bg-[#334155];
   font-family: 'JetBrains Mono', monospace; /* Apply JetBrains Mono font to inline code */
 }
 

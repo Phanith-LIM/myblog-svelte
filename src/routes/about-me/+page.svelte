@@ -7,7 +7,7 @@
     <meta name="description" content={config.description} />
 </svelte:head>
 
-<div class="max-w-screen-md mx-auto px-2 md:px-0">
+<div class="max-w-(--breakpoint-md) mx-auto px-2 md:px-0">
     <div class="col-start-2">
         
     </div>

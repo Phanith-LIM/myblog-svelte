@@ -27,7 +27,7 @@
     <meta property="og:image" content="image.jpg" />
 </svelte:head>
 
-<div class="max-w-screen-md mx-auto px-4 md:px-0">
+<div class="max-w-(--breakpoint-md) mx-auto px-4 md:px-0">
   <div class="col-start-2">
       <h2 class="mb-16 font-geistSans font-semibold">Blog</h2>
       <div class="group">
@@ -40,7 +40,7 @@
                   {#each postList as post}
                       <a
                           href={`${post.slug}`} 
-                          class="group/item flex transition-opacity group-hover:opacity-40 hover:!opacity-100"
+                          class="group/item flex transition-opacity group-hover:opacity-40 hover:opacity-100!"
                       >
                           <div class="ml-[20%] flex flex-1 justify-between border-t border-border/40 py-3 group-first-of-type:item:border-t-0">
                               <span>{post.title}</span>
