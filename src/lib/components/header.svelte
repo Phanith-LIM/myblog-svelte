@@ -21,7 +21,7 @@
 </script>
 
 <header
-  class="sticky top-0 z-50 flex w-full items-center justify-center border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+  class="sticky top-0 z-50 flex w-full items-center justify-center border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 font-merriweather"
 >
   <div class="flex h-14 w-full max-w-screen-xl items-center justify-between px-8">
     <nav class="flex items-center gap-6 font-geistSans">

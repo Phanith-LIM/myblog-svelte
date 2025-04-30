@@ -7,7 +7,7 @@
 
 
 <Header />
-<div class="py-16 pl-safe-left pr-safe-right">
+<div class="py-16 pl-safe-left pr-safe-right font-merriweather">
 	<div class="mx-auto w-full max-w-page">
 	  {@render children()}
 	</div>

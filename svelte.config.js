@@ -1,13 +1,22 @@
-import { mdsvex } from 'mdsvex';
+import { mdsvex, escapeSvelte } from 'mdsvex';
 import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import rehypeSlug from 'rehype-slug'; 
 import readingTime from "mdsvex-reading-time";
-
 import remarkMath from 'remark-math';
 import rehypeKatexSvelte from "rehype-katex-svelte";
+import { createHighlighter } from 'shiki';
 
 /** @type {import('@sveltejs/kit').Config} */
+
+const theme = "github-dark"
+const highlighter = await createHighlighter({
+	themes: [
+		theme
+	],
+	langs: ['javascript', 'typescript', 'python', 'bash'],
+});
+
 
 const mdsvexOptions = {
 	extensions: ['.md', '.mdx'],
@@ -25,6 +34,12 @@ const mdsvexOptions = {
 			},
 		},
 	],
+	// highlight: {
+	// 	highlighter: async (code, lang = 'text') => {
+	// 		const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
+	// 		return `{@html \`${html}\` }`;
+	// 	}
+	// },
 };
 
 const config = {

@@ -1,7 +1,5 @@
 <script lang="ts">
-import { Badge } from "$lib/components/ui/badge/index.js";
 import { Separator } from "$lib/components/ui/separator/index.js";
-import { Calendar } from "lucide-svelte";
 import dayjs from "dayjs";
 
 export let data;
@@ -23,7 +21,7 @@ export let data;
 	{data.meta.title}
 	<br>
 	<span class="text-sm text-gray-500 font-normal space-x-2">
-		<span>{ dayjs(data.meta.date).format('DD MMMM YYYY') } </span>
+		<span>{ dayjs(data.meta.date).format('DD MMM, YYYY') } </span>
 		<span> | </span>
 		<span>{ data.meta.readingTime?.text } </span>
 	</span>
