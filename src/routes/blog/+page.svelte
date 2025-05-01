@@ -22,7 +22,7 @@
 </script>
 
 <svelte:head>
-    <title>Reading..</title>
+    <title>Reading...</title>
     <meta name="description" content={config.description} />
 </svelte:head>
 

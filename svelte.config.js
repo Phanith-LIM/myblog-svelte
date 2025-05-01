@@ -45,12 +45,12 @@ const mdsvexOptions = {
 					light: 'one-light',
 					dark: 'one-dark-pro',
 				},
-				transformers: [
-					transformerCopyButton({
-						visibility: 'hover',
-						feedbackDuration: 2_000,
-					}),
-				]
+				// transformers: [
+				// 	transformerCopyButton({
+				// 		visibility: 'hover',
+				// 		feedbackDuration: 2_000,
+				// 	}),
+				// ]
 			}));
 			return `{@html \`${html}\` }`;
 		}

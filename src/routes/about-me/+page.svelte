@@ -54,7 +54,7 @@
     <div class="motion-safe:animate-enter" style="animation-delay: 600ms">
         <h3 class="mt-8 font-semibold">Find Me Online</h3>
         <ul class="list-disc pl-6">
-            <li><a href="https://github.com/PhanithLIm" class="text-blue-500 underline" target="_blank">GitHub</a> – Check out my projects.</li>
+            <li><a href="https://github.com/Phanith-LIM" class="text-blue-500 underline" target="_blank">GitHub</a> – Check out my projects.</li>
             <li><a href="https://www.linkedin.com/in/phanith-lim-11441a2a3/" class="text-blue-500 underline" target="_blank">LinkedIn</a> – Let's network!</li>
             <li><a href="https://huggingface.co/PhanithLIM" class="text-blue-500 underline" target="_blank">Hugging Face</a> – My AI/ML explorations.</li>
         </ul>
