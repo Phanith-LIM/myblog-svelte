@@ -41,25 +41,6 @@
         </ul>
     </div>
 
-    <!-- Contact Section -->
-    <div class="motion-safe:animate-enter" style="animation-delay: 500ms">
-        <h3 class="mt-8 font-semibold">Let's Connect!</h3>
-        <p>Got an idea? Want to chat? Or just need someone to debug your existential crises?</p>
-        <a href="mailto:phanithlim2002@gmail.com" class="text-blue-500 underline">
-            Shoot me an email, or send a carrier pigeon (no guarantees on response time).
-        </a>
-    </div>
-
-    <!-- Online Presence Section -->
-    <div class="motion-safe:animate-enter" style="animation-delay: 600ms">
-        <h3 class="mt-8 font-semibold">Find Me Online</h3>
-        <ul class="list-disc pl-6">
-            <li><a href="https://github.com/Phanith-LIM" class="text-blue-500 underline" target="_blank">GitHub</a> – Check out my projects.</li>
-            <li><a href="https://www.linkedin.com/in/phanith-lim-11441a2a3/" class="text-blue-500 underline" target="_blank">LinkedIn</a> – Let's network!</li>
-            <li><a href="https://huggingface.co/PhanithLIM" class="text-blue-500 underline" target="_blank">Hugging Face</a> – My AI/ML explorations.</li>
-        </ul>
-    </div>        
-
     <!-- Tech Stack Section -->
     <div class="motion-safe:animate-enter" style="animation-delay: 700ms">
         <h3 class="mt-8 font-semibold">Tech Stack (aka my toolkit for world domination)</h3>
@@ -73,18 +54,6 @@
             <li>GitHub & GitLab – Version control and collaboration at its finest (and where I spend most of my "productive" time).</li>
             <li>Docker – Containerizing everything, even my problems.</li>
         </ul>
-    </div>
-    
-
-    <!-- Testimonials Section -->
-    <div class="motion-safe:animate-enter" style="animation-delay: 800ms">
-        <h3 class="mt-8 font-semibold">What People Say</h3>
-        <blockquote class="mt-6 border-l-2 pl-6 italic">
-            "Phanith once fixed a bug I didn't even know existed." - A Happy Client
-        </blockquote>
-        <blockquote class="mt-6 border-l-2 pl-6 italic">
-            "They call me an outstanding student since I am always standing outside the classroom." - Me, Probably
-        </blockquote>
     </div>
 
     <!-- Fun GIF Section -->

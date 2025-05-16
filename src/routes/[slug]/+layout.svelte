@@ -1,5 +1,4 @@
 <script lang="ts">
-	// import '../../styles/prism.css';
 	import '../../app.css';
 	import Progress from '../../lib/components/progress.svelte';
 	import Giscus from '@giscus/svelte';
