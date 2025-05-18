@@ -1,7 +1,7 @@
 <script lang="ts">
     import * as config from '$lib/config';
     const links = [
-        { name: 'Youtube', href: 'https://www.youtube.com/@itsphanith' },
+        { name: 'Youtube', href: 'https://www.youtube.com/@its-phanith' },
         { name: 'LinkedIn', href: 'https://www.linkedin.com/in/phanithlim' },
         { name: 'Github', href: 'https://github.com/Phanith-LIM' },
         { name: 'Hugging Face', href: 'https://huggingface.co/PhanithLIM' },
