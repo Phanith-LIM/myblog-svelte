@@ -16,8 +16,8 @@
 		{@render children()}
 		<br>
 		<Separator />
-		<br>
-		<Giscus
+		<!-- <br> -->
+		<!-- <Giscus
 			id="comments"
 			repo="Phanith-LIM/myblog-svelte"
 			repoId="R_kgDONvurpQ"
@@ -30,7 +30,7 @@
 			theme={$themeStore === 'system' ? 'preferred_color_scheme' : $themeStore}
 			lang="en"
 			loading="lazy"
-		/>
+		/> -->
 	</div>
 </div>
 <!-- <div class="grid grid-cols-1 lg:grid-cols-[192px_3fr] gap-4">
