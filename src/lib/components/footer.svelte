@@ -3,7 +3,7 @@
     const links = [
         { name: 'Youtube', href: 'https://www.youtube.com/@its-phanith' },
         { name: 'LinkedIn', href: 'https://www.linkedin.com/in/phanithlim' },
-        { name: 'Github', href: 'https://github.com/Phanith-LIM' },
+        { name: 'Github', href: 'https://github.com/phanithlim' },
         { name: 'Hugging Face', href: 'https://huggingface.co/PhanithLIM' },
         { name: 'Medium', href: 'https://itsphanith.medium.com' },
         { name: 'RSS', href: '/rss.xml' },

@@ -59,7 +59,7 @@
         </a>
       </Button> -->
       <Button variant="ghost" size="icon" class="h-8 w-8">
-        <a href="https://github.com/Phanith-LIM" target="_blank">
+        <a href="https://github.com/phanithlim" target="_blank">
           <Github class="size-[1.2rem]" />
         </a>
       </Button>
